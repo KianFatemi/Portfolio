@@ -545,10 +545,12 @@ nav ul {
 		grid-template-columns: 1fr;
 	}
 
-	.profile-pic {
-		max-width: 300px;
-		margin: 0 auto;
-	}
+    .profile-pic {
+        margin: 0 auto; /* Center on mobile */
+        max-width: 300px;
+        position: static; /* Remove any relative positioning on mobile */
+        left: auto; /* Reset left positioning */
+    }
 
     	.contact-title {
 		margin: 0 2rem 2rem;
@@ -600,6 +602,16 @@ nav ul {
 	.project-image-grid {
 		grid-template-columns: 1fr 1fr;
 	}
+	    .about-title, .projects-title, .contact-title {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    #about .container, #projects .container, #contact .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -655,5 +667,10 @@ nav ul {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
 	}
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
