@@ -1,106 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="lightbox.css">
-    <script defer src="app.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>
-        Kian Fatemi's Portfolio
-    </title>
-    <link rel="icon" href="ContactIcons/icon.png">
-</head>
-<body>
-    <section id="home" class="page">
-        <div class="content">
-            <h1 class="name fade-in">Kian Fatemi</h1>
-        </div>
-    </section>
+   <head>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="lightbox.css">
+      <script defer src="app.js"></script>
+      <script src="lightbox-plus-jquery.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kian Fatemi's Portfolio</title>
+   </head>
 
-    <section  id="music-section" class="hidden">
-        <div class="content">
-            <div class="project-container">
-                <h1>Music Recommender</h1>
-                <p class="category"> • Application •</p>
-                <p class="description"> A music recommender developed using Python with <br> a graphical user interface, leveraging the Spotify API <br> to provide personalized song suggestions.</p>
-                <div class="image-container">
-                    <a href="MusicImages/music4.jpg" data-lightbox="models">
-                        <div class="gallery"><img src="MusicImages/music4.jpg" class="image hidden"></div>
-                    </a>
-                    <a href="MusicImages/music1.jpg" data-lightbox="models">
-                        <div class="gallery"><img src="MusicImages/music1.jpg" class="image hidden"></div>
-                    </a>
-                    <a href="MusicImages/music2.jpg" data-lightbox="models">
-                        <div class="gallery"><img src="MusicImages/music2.jpg" class="image hidden"></div>
-                    </a>
-                    <a href="MusicImages/music3.jpg" data-lightbox="models">
-                        <div class="gallery"><img src="MusicImages/music3.jpg" class="image hidden"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+   <body>
+      <!-- Header Navigation -->
+      <div class="top-gradient-wrapper"></div>
+        <header>
+        <nav class="nav-island">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
 
-    <section id="game-section" class="hidden">
-        <div class="content">
-            <div class="project-container">
-                <h1>Maze of Ascension</h1>
-                <p class="category"> • Game Development •</p>
-                <p class="description">A Unity-built 3D platformer in C#, where players <br> navigate platforms and overcome obstacles to reach the <br> top of the tower. </p>
-                <div class="image-container">
-                    <a href="GameImages/screenshot_001.png" data-lightbox="models">
-                        <div class="gallery"><img src="GameImages/screenshot_001.png" class="image hidden"></div>
-                    </a>
-                    <a href="GameImages/screenshot_006.png" data-lightbox="models">
-                        <div class="gallery"><img src="GameImages/screenshot_006.png" class="image hidden"></div>
-                    </a>
-                    <a href="GameImages/screenshot_007.png" data-lightbox="models">
-                        <div class="gallery"><img src="GameImages/screenshot_007.png" class="image hidden"></div>
-                    </a>
-                    <a href="GameImages/screenshot_010.png" data-lightbox="models">
-                        <div class="gallery"><img src="GameImages/screenshot_010.png" class="image hidden"></div>
-                    </a>
-                </div>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+         <div class="container">
+            <h1>Hi, I am <span>Kian Fatemi</span></h1>
+            <div>
+               <a href="#contact" class="contact-btn">Contact Me <span>→</span></a>
+               <a href="https://www.linkedin.com/in/kian-fatemi-96a45b224/" class="social-icon">
+                  <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
+                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+               </a>
             </div>
-        </div>
-    </section>
-    
-    <section id="web-section"class="hidden">
-        <div class="content">
-            <div class="project-container">
-                <h1>Formula Data</h1>
-                <p class="category"> •Web Development •</p>
-                <p class="description">A Django project built with Python, HTML, and CSS <br> that utilizes the FastF1 API to visualize and analyze <br> Formula 1 race data.
-                <div class="image-container">
-                    <a href="FormulaDataImages/laptimes.jpg" data-lightbox="models">
-                        <div class="gallery"><img src="FormulaDataImages/laptimes.jpg" class="image hidden"></div>
-                    </a>
-                    <a href="FormulaDataImages/positions.jpg" data-lightbox="models">
-                        <div class="gallery"><img src="FormulaDataImages/positions.jpg" class="image hidden"></div>
-                    </a>
-                    <a href="FormulaDataImages/qualifying.jpg" data-lightbox="models">
-                        <div class="gallery"><img src="FormulaDataImages/qualifying.jpg" class="image hidden"></div>
-                    </a>
-                    <a href="FormulaDataImages/SpeedTrace.jpg" data-lightbox="models">
-                        <div class="gallery"><img src="FormulaDataImages/SpeedTrace.jpg" class="image hidden"></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+         </div>
+      </section>
 
-    <section class="hidden contact-section">
-        <div class="contact-container">
-            <h1>Contact Me</h1>
-            <div class="contact-images">
-                <a href="mailto:kianfatemi@comcast.net"><img src="ContactIcons/email.png" alt="Email" class="image hidden"></a>
-                <a href="https://www.linkedin.com/in/kian-fatemi-96a45b224/" target="_blank"><img src="ContactIcons/linkedin2.png" alt="LinkedIn" class="image hidden"></a>
-                <a href="https://github.com/KianFatemi" target="_blank"><img src="ContactIcons/github.png" alt="GitHub" class="image hidden"></a>
+      <section id="about">
+         <h2 class="about-title">About Me</h2>
+         <div class="container">
+            <div class="about-content">
+               <div class="about-text">
+                  <p>
+                     I'm a software engineer who enjoys building useful and high quality applications. I graduated from the University of New Haven with a degree in Computer Science, where I worked on projects that strengthened my skills in programming, problem-solving, and collaboration. I like working across both front-end and back-end, and I'm always exploring new tools and technologies to grow as a developer. I care about writing clean, efficient code and creating software that solves real problems and improves user experiences. Outside of coding, I enjoy watching sports, listening to music, and catching the latest movies.
+                  </p>
+               </div>
+               <div class="profile-pic">
+                  <img src="ContactIcons/kianphoto.jpg" alt="Kian Fatemi" />
+               </div>
             </div>
-        </div>
-    </section>
+         </div>
+      </section>
 
-    <script src="lightbox-plus-jquery.js"></script>
-</body>
-</html>
+      <section id="projects">
+         <h2 class="projects-title">Projects</h2>
+         <div class="container">
+         <div class="projects-grid">
+         <!-- Project 1 -->
+                   <div class="project-card">
+            <div class="project-info">
+               <div class="project-logo">
+                  <img src="MageHandImages/MageHandLogo.JPG">
+               </div>
+               <h3>Mage Hand: VR Computer Networking Education Platform</h3>
+               <p>Mage Hand is a VR networking simulation built in Unity that allows students to set up and visualize computer networks in an interactive 3D environment. Students can place, connect and configure devices. Instructors can create custom lab scenarios for students to follow and complete. The platform also enables instructors to observe student progress in real time.</p>
+               <a href="https://www.youtube.com/watch?v=nCPEquTAYNE&list=PLXWhj-WST1T3k52QcQMpLyeU36lA4hPGp&index=2" class="project-link">Demo Video →</a>
+            </div>
+            <div class="project-image">
+               <div class="project-image-grid">
+                  <a href="MageHandImages/connectdevice.jpg" data-lightbox="models" data-title="Music Recommender Interface">
+                     <div class="gallery"><img src="MageHandImages/connectdevice.jpg"></div>
+                  </a>
+                  <a href="MageHandImages/ConfigDevice.png" data-lightbox="models">
+                     <div class="gallery"><img src="MageHandImages/ConfigDevice.png"></div>
+                  </a>
+                  <a href="MageHandImages/packets.jpg" data-lightbox="models">
+                     <div class="gallery"><img src="MageHandImages/packets.jpg"></div>
+                  </a>
+                  <a href="MageHandImages/teacherlab.jpg" data-lightbox="models">
+                     <div class="gallery"><img src="MageHandImages/teacherlab.jpg"></div>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="project-card">
+            <div class="project-info">
+               <div class="project-logo">
+                  <img src="ContactIcons/python.png">
+               </div>
+               <h3>Music Recommender</h3>
+               <p>This project uses the Spotify API to analyze songs from a user's selected playlist, identifying their musical preferences based on attributes like tempo, energy, and valence. It then provides personalized recommendations, suggesting new songs that match the user's favorite types of music.</p>
+               <a href="https://github.com/Kazemooze/MusicTinkers" class="project-link">Github →</a>
+            </div>
+            <div class="project-image">
+               <div class="project-image-grid">
+                  <a href="MusicImages/music4.jpg" data-lightbox="models" data-title="Music Recommender Interface">
+                     <div class="gallery"><img src="MusicImages/music4.jpg"></div>
+                  </a>
+                  <a href="MusicImages/music1.jpg" data-lightbox="models">
+                     <div class="gallery"><img src="MusicImages/music1.jpg"></div>
+                  </a>
+                  <a href="MusicImages/music2.jpg" data-lightbox="models">
+                     <div class="gallery"><img src="MusicImages/music2.jpg"></div>
+                  </a>
+                  <a href="MusicImages/music3.jpg" data-lightbox="models">
+                     <div class="gallery"><img src="MusicImages/music3.jpg"></div>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Project 2 -->
+         <div class="project-card">
+            <div class="project-info">
+               <div class="project-logo">
+                  <img src="ContactIcons/unity.png">
+               </div>
+               <h3>Maze of Ascension</h3>
+               <p>A Unity-built 3D platformer in C#, where players navigate platforms and overcome obstacles to reach the top of the tower.</p>
+               <a href="https://github.com/KianFatemi/Maze-of-Ascension-Platformer-Game" class="project-link">Github →</a>
+            </div>
+            <div class="project-image">
+               <div class="project-image-grid">
+                  <a href="GameImages/screenshot_001.png" data-lightbox="models" data-title="Music Recommender Interface">
+                     <div class="gallery"><img src="GameImages/screenshot_001.png"></div>
+                  </a>
+                  <a href="GameImages/screenshot_006.png" data-lightbox="models">
+                     <div class="gallery"><img src="GameImages/screenshot_006.png"></div>
+                  </a>
+                  <a href="GameImages/screenshot_007.png" data-lightbox="models">
+                     <div class="gallery"><img src="GameImages/screenshot_007.png"></div>
+                  </a>
+                  <a href="GameImages/screenshot_010.png" data-lightbox="models">
+                     <div class="gallery"><img src="GameImages/screenshot_010.png"></div>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="project-card">
+         <div class="project-info">
+            <div class="project-logo">
+               <img src="ContactIcons/django.png">
+            </div>
+            <h3>Formula Data Visualisation</h3>
+            <p>A Django project built with Python, HTML, and CSS that utilizes the FastF1 API to visualize and analyze Formula 1 race data.</p>
+            <a href="https://github.com/KianFatemi/Formula1-Data-Website" class="project-link">Github →</a>
+         </div>
+         <div class="project-image">
+            <div class="project-image-grid">
+               <a href="FormulaDataImages/laptimes.jpg" data-lightbox="models" data-title="Music Recommender Interface">
+                  <div class="gallery"><img src="FormulaDataImages/laptimes.jpg"></div>
+               </a>
+               <a href="FormulaDataImages/positions.jpg" data-lightbox="models">
+                  <div class="gallery"><img src="FormulaDataImages/positions.jpg"></div>
+               </a>
+               <a href="FormulaDataImages/qualifying.jpg" data-lightbox="models">
+                  <div class="gallery"><img src="FormulaDataImages/qualifying.jpg"></div>
+               </a>
+               <a href="FormulaDataImages/SpeedTrace.jpg" data-lightbox="models">
+                  <div class="gallery"><img src="FormulaDataImages/SpeedTrace.jpg"></div>
+               </a>
+            </div>
+         </div>
+      </section>
+
+      <section id="contact">
+         <h2 class="contact-title">Contact Me</h2>
+         <div class="container">
+            <div class="contact-content">
+               <div class="contact-info">
+                  <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                  <div class="contact-methods">
+                     <div class="contact-method">
+                        <div class="contact-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                              <polyline points="22,6 12,13 2,6"></polyline>
+                           </svg>
+                        </div>
+                        <div class="contact-details">
+                           <h3>Email</h3>
+                           <p><a href="mailto:kianfatemi@comcast.net">kianfatemi@comcast.net</a></p>
+                        </div>
+                     </div>
+                     <div class="contact-method">
+                        <div class="contact-icon">
+                           <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                              <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
+                              <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+                           </svg>
+                        </div>
+                        <div class="contact-details">
+                           <h3>LinkedIn</h3>
+                           <p><a href="https://www.linkedin.com/in/kian-fatemi-96a45b224/" target="_blank">Kian Fatemi</a></p>
+                        </div>
+                     </div>
+                     <div class="contact-method">
+                        <div class="contact-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                           </svg>
+                        </div>
+                        <div class="contact-details">
+                           <h3>GitHub</h3>
+                           <p><a href="https://github.com/kianfatemi" target="_blank">github.com/kianfatemi</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="contact-form">
+                  <h3>Send Me a Message</h3>
+                  <form action="https://formspree.io/f/xkgrpzyv" method="POST">
+                     <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                     </div>
+                     <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                     </div>
+                     <button type="submit" class="submit-btn">Send Message</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
